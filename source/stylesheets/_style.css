@@ -539,7 +539,7 @@ section.spacer {
   background-size: cover;
 }
 section.spacer.children {
-  background-image: url("../img/banner-arts.jpg");
+  background-image: url("../images/banner-arts.jpg");
 }
 @-moz-keyframes reveal {
   0% {
