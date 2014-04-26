@@ -2,5 +2,125 @@
 title: Welcome to Middleman
 ---
 %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"}
-= partial 'partials/header'
-= partial 'partials/hero-unit'
+  -# = partial 'partials/header'
+-# = partial 'partials/hero-unit'
+#wrapper
+  %header#banner
+    #logo.col-sm-4
+      %img{:alt => "", :src => "public/img/logo_x240.png"}
+    #main-banner{"data-speed" => "2", "data-type" => "background"}
+      #bx-wrapper.bx-wrapper
+        .bx-loading
+          .loader
+            %span.dot.dot1
+              %span.dot.dot2
+                %span.dot.dot3
+                  %span.dot.dot4
+                    .bx-content
+                      %h2 Welcome to CASA San Miguel
+        %nav.bx-nav
+          %a.bx-prev{:href => "#"}
+            %a.bx-next{:href => "#"}
+              .bx-thumbs
+                %a{:href => "#", :style => "background-image:url(public/img/banner/thumbs/3.jpg)"}
+                  %a{:href => "#", :style => "background-image:url(public/img/banner/thumbs/2.jpg)"}
+                    %a{:href => "#", :style => "background-image:url(public/img/banner/thumbs/1.jpg)"}
+                      .bx-container
+                        %img{:alt => "image03", :src => "public/img/banner/3.jpg", :title => "Something to say in here"}
+            %img{:alt => "image02", :src => "public/img/banner/2.jpg", :title => "What else to say in here"}
+              %img{:alt => "image01", :src => "public/img/banner/1.jpg", :title => "I don't what else can I say"}
+  %nav#navigation.container
+    %section.branding.col-sm-2
+      %img.logo{:alt => "", :src => "public/img/logo.png"}
+    %ul#primary-nav.col-sm-10
+      %li
+        %a{:href => "#home"} Home
+        %li
+          %a{:href => "program.php"} Program
+          %li
+            %a{:href => "arts.php"} Arts
+            %li
+              %a{:href => "hotel.php"} Hotel
+              %li
+                %a{:href => "museum.php"} Museum
+                %li
+                  %a{:href => "cafe.php"} Cafe
+                  %li
+                    %a{:href => "investor.php"} Support
+  -# %section#about.section
+  -#   .sub-section
+  -#     .content
+  -#       %h1.title About CASA San Miguel
+  -#       %p.lead
+  -#         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, cum quae assumenda nisi illum facere laudantium aliquid optio delectus molestiae! Non, magni dolorem explicabo corporis minus provident doloribus voluptatem asperiores!
+  -#       %p.col-sm-6
+  -#         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, quaerat, voluptate, praesentium dignissimos consectetur reprehenderit fugiat optio sit quo tenetur placeat alias voluptas itaque asperiores facere voluptatem cumque pariatur temporibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, magni voluptatem laboriosam molestias doloremque autem dicta quisquam neque natus accusamus perferendis modi quo voluptatum aliquam unde odio quidem. Harum, molestias!
+  -#       %p.col-sm-6
+  -#         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, quas, at molestias earum et nostrum saepe nobis architecto similique nesciunt sunt magnam consectetur deleniti neque aspernatur voluptatem odit deserunt animi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, autem, necessitatibus, quod, nihil omnis iusto deleniti blanditiis ducimus voluptas quasi corrupti ab nesciunt magni officiis illum eum quae dolores dolorum.
+  -#       .clearfix
+  -#         %section.spacer.children
+  -#           %section#news.section
+  -#             %h1.title News and Events
+  -#   %ul.news-list
+  -#     %li.news-item
+  -#       %section.news-thumb.col-md-4
+  -#         .meta
+  -#           %span.meta-date October
+  -#           %span.meta-day 23
+  -#           %span.meta-year 2013
+  -#         %img{:alt => "", :src => "uploads/images/2.jpg"}
+  -#       %section.news-content.col-md-8
+  -#         %h2.news-title
+  -#           Some news here
+  -#         %p
+  -#           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, exercitationem fugiat architecto modi quis voluptate ea! Accusantium, minus, facere, eveniet eligendi autem ducimus dolorem at veritatis suscipit asperiores dolor eaque.
+  -#     %li.news-item
+  -#       %section.news-thumb.col-md-4
+  -#         .meta
+  -#           %span.meta-date October
+  -#           %span.meta-day 22
+  -#           %span.meta-year 2013
+  -#         %img{:alt => "", :src => "uploads/images/1.jpg"}
+  -#       %section.news-content.col-md-8
+  -#         %h2.news-title
+  -#           Some news here
+  -#         %p
+  -#           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, exercitationem fugiat architecto modi quis voluptate ea! Accusantium, minus, facere, eveniet eligendi autem ducimus dolorem at veritatis suscipit asperiores dolor eaque.
+  -#     %li.news-item
+  -#       %section.news-thumb.col-md-4
+  -#         .meta
+  -#           %span.meta-date October
+  -#           %span.meta-day 22
+  -#           %span.meta-year 2013
+  -#         %img{:alt => "", :src => "uploads/images/3.jpg"}
+  -#       %section.news-content.col-md-8
+  -#         %h2.news-title
+  -#           Some news here
+  -#         %p
+  -#           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, exercitationem fugiat architecto modi quis voluptate ea! Accusantium, minus, facere, eveniet eligendi autem ducimus dolorem at veritatis suscipit asperiores dolor eaque.
+  -#     %li.news-item
+  -#       %section.news-thumb.col-md-4
+  -#         .meta
+  -#           %span.meta-date October
+  -#           %span.meta-day 21
+  -#           %span.meta-year 2013
+  -#         %img{:alt => "", :src => "uploads/images/4.jpg"}
+  -#       %section.news-content.col-md-8
+  -#         %h2.news-title
+  -#           Some news here
+  -#         %p
+  -#           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, exercitationem fugiat architecto modi quis voluptate ea! Accusantium, minus, facere, eveniet eligendi autem ducimus dolorem at veritatis suscipit asperiores dolor eaque.
+  -# #contact-us.section
+  -#   #contact-info.sub-section
+  -#     %ul
+  -#       %li.contact
+  -#         %i.icon-map-marker>
+  -#         CASA San Miguel, Evangelista Street, Barangay San Miguel, San Antonio, Zambales, 2206 Philippines
+  -#         %li.contact
+  -#           %i.icon-phone>
+  -#           +321 123 456 7
+  -#           %li.contact
+  -#             %i.icon-envelope>
+  -#             mail@casasanmiguel.com
+  -#   #map-canvas.sub-section
+  -#     / end wrapper
