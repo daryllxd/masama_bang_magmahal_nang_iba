@@ -16,7 +16,6 @@ gem "tzinfo-data", platforms: [:mswin, :mingw]
 gem 'bootstrap-sass'
 gem 'bourbon'
 gem 'neat'
-gem 'bitters'
 gem 'haml'
 
 group :development do
