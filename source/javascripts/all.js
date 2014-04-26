@@ -1,7 +1,5 @@
-//= require_tree .
+//= require_directory .
 //= require jquery
-//= require eqeqdwq
-//
 
   // -# <script src="public/vendor/jquery/jquery.min.js"></script>
   // -# <script src="public/js/gmaps.js"></script>

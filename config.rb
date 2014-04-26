@@ -19,7 +19,5 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
-# Bowerization
-ready do
-  sprockets.append_path File.join root, 'bower_components'
-end
+sprockets.append_path File.join root.to_s, "bower_components"
+
