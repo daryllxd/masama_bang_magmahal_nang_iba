@@ -1,10 +1,8 @@
-//= require_directory .
 //= require jquery
+//= require gmaps
+//= require queryloader2
+//= require sticky/jquery.sticky
+//= require _stackblur
+//= require _casa
 
-  // -# <script src="public/vendor/jquery/jquery.min.js"></script>
-  // -# <script src="public/js/gmaps.js"></script>
-  // -# <script src="public/vendor/queryloader/jquery.queryloader2.min.js"></script>
-  // -# <script src="public/vendor/jquery/jquery.sticky.js"></script>
-  // -# <script src="public/js/stackblur.js"></script>
-  // -# <script src="public/js/app.js"></script>
-// -# %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"}
+//= stackblur - can't install via bower so manually included.

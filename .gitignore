@@ -1,6 +1,9 @@
 # Ignore bundler config
 /.bundle
 
+# Ignore bower components
+/bower_components
+
 # Ignore the build directory
 /build
 
