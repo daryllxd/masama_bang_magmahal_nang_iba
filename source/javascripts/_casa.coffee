@@ -5,7 +5,7 @@ class Casa
   }
   init: () ->
     this.ui.build()
-    this.listen()
+    # this.listen()
   listen: () ->
     google.maps.event.addDomListener(window, 'load', this.map.init)
 
@@ -68,7 +68,6 @@ class Casa
 
 casa = new Casa
 $(document).on 'ready', () ->
-  alert "fuck"
   casa.init()
 
 window.addEventListener('DOMContentLoaded', () -> 

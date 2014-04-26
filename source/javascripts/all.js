@@ -1,5 +1,5 @@
 //= require jquery
-//= require gmaps
+// require gmaps
 //= require queryloader2
 //= require sticky/jquery.sticky
 //= require _stackblur
