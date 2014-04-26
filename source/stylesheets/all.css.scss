@@ -1,0 +1,15 @@
+@import 'bourbon';
+@import 'neat';
+@import 'bitters/bitters';
+@import 'bitters/grid-settings';
+@import 'normalize';
+@import 'header';
+@import 'hero-unit';
+@charset 'utf-8';
+
+body {
+  background: #d4d4d4 url("../images/background.png");
+  font-family: sans-serif;
+  text-align: center;
+}
+
