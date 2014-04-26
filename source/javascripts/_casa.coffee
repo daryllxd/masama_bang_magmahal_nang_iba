@@ -68,6 +68,7 @@ class Casa
 
 casa = new Casa
 $(document).on 'ready', () ->
+  alert "fuck"
   casa.init()
 
 window.addEventListener('DOMContentLoaded', () -> 

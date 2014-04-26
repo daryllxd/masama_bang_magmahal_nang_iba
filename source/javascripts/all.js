@@ -5,4 +5,4 @@
 //= require _stackblur
 //= require _casa
 
-//= stackblur - can't install via bower so manually included.
+// stackblur - can't install via bower so manually included.
