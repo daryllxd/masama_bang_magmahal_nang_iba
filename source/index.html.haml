@@ -18,14 +18,14 @@ title: Welcome to Middleman
         %nav.bx-nav
           %a.bx-prev{:href => "#"}
           %a.bx-next{:href => "#"}
-            .bx-thumbs
-              %a{:href => "#", :style => "background-image:url(images/banner/thumbs/3.jpg)"}
-              %a{:href => "#", :style => "background-image:url(images/banner/thumbs/2.jpg)"}
-              %a{:href => "#", :style => "background-image:url(images/banner/thumbs/1.jpg)"}
-            .bx-container
-              %img{:alt => "image03", :src => "images/banner-3.jpg", :title => "Something to say in here"}
-              %img{:alt => "image02", :src => "images/banner-2.jpg", :title => "What else to say in here"}
-              %img{:alt => "image01", :src => "images/banner-1.jpg", :title => "I don't what else can I say"}
+        .bx-thumbs
+          %a{:href => "#", :style => "background-image:url(images/banner/thumbs/3.jpg)"}
+          %a{:href => "#", :style => "background-image:url(images/banner/thumbs/2.jpg)"}
+          %a{:href => "#", :style => "background-image:url(images/banner/thumbs/1.jpg)"}
+        .bx-container
+          %img{:alt => "image03", :src => "images/banner-3.jpg", :title => "Something to say in here"}
+          %img{:alt => "image02", :src => "images/banner-2.jpg", :title => "What else to say in here"}
+          %img{:alt => "image01", :src => "images/banner-1.jpg", :title => "I don't what else can I say"}
   %nav#navigation.container
     %section.branding.col-sm-2
       %img.logo{:alt => "", :src => "public/img/logo.png"}
@@ -33,17 +33,17 @@ title: Welcome to Middleman
       %li
         %a{:href => "#home"} Home
       %li
-        %a{:href => "program.php"} Program
+        %a{:href => "program.html"} Program
       %li
-        %a{:href => "arts.php"} Arts
+        %a{:href => "arts.html"} Arts
       %li
-        %a{:href => "hotel.php"} Hotel
+        %a{:href => "hotel.html"} Hotel
       %li
-        %a{:href => "museum.php"} Museum
+        %a{:href => "museum.html"} Museum
       %li
-        %a{:href => "cafe.php"} Cafe
+        %a{:href => "cafe.html"} Cafe
       %li
-        %a{:href => "investor.php"} Support
+        %a{:href => "investor.html"} Support
   %section#about.section
     .sub-section
       .content
@@ -55,58 +55,21 @@ title: Welcome to Middleman
         %p.col-sm-6
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, quas, at molestias earum et nostrum saepe nobis architecto similique nesciunt sunt magnam consectetur deleniti neque aspernatur voluptatem odit deserunt animi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, autem, necessitatibus, quod, nihil omnis iusto deleniti blanditiis ducimus voluptas quasi corrupti ab nesciunt magni officiis illum eum quae dolores dolorum.
         .clearfix
-        %section.spacer.children
-        %section#news.section
-          %h1.title News and Events
+  %section.spacer.children
+  %section#news.section
+    %h1.title News and Events
     %ul.news-list
-      %li.news-item
-        %section.news-thumb.col-md-4
-          .meta
-            %span.meta-date October
-            %span.meta-day 23
-            %span.meta-year 2013
-          %img{:alt => "", :src => "uploads/images/2.jpg"}
-        %section.news-content.col-md-8
-          %h2.news-title
-            Some news here
-          %p
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, exercitationem fugiat architecto modi quis voluptate ea! Accusantium, minus, facere, eveniet eligendi autem ducimus dolorem at veritatis suscipit asperiores dolor eaque.
-      %li.news-item
-        %section.news-thumb.col-md-4
-          .meta
-            %span.meta-date October
-            %span.meta-day 22
-            %span.meta-year 2013
-          %img{:alt => "", :src => "uploads/images/1.jpg"}
-        %section.news-content.col-md-8
-          %h2.news-title
-            Some news here
-          %p
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, exercitationem fugiat architecto modi quis voluptate ea! Accusantium, minus, facere, eveniet eligendi autem ducimus dolorem at veritatis suscipit asperiores dolor eaque.
-      %li.news-item
-        %section.news-thumb.col-md-4
-          .meta
-            %span.meta-date October
-            %span.meta-day 22
-            %span.meta-year 2013
-          %img{:alt => "", :src => "uploads/images/3.jpg"}
-        %section.news-content.col-md-8
-          %h2.news-title
-            Some news here
-          %p
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, exercitationem fugiat architecto modi quis voluptate ea! Accusantium, minus, facere, eveniet eligendi autem ducimus dolorem at veritatis suscipit asperiores dolor eaque.
-      %li.news-item
-        %section.news-thumb.col-md-4
-          .meta
-            %span.meta-date October
-            %span.meta-day 21
-            %span.meta-year 2013
-          %img{:alt => "", :src => "uploads/images/4.jpg"}
-        %section.news-content.col-md-8
-          %h2.news-title
-            Some news here
-          %p
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, exercitationem fugiat architecto modi quis voluptate ea! Accusantium, minus, facere, eveniet eligendi autem ducimus dolorem at veritatis suscipit asperiores dolor eaque.
+      = 4.times do |index|
+        %li.news-item
+          %section.news-thumb.col-md-4
+            .meta
+              %span.meta-date October
+              %span.meta-day= index + 1
+              %span.meta-year 2013
+            %img{:alt => "", :src => "uploads/images/2.jpg"}
+          %section.news-content.col-md-8
+            %h2.news-title Some news here
+            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, exercitationem fugiat architecto modi quis voluptate ea! Accusantium, minus, facere, eveniet eligendi autem ducimus dolorem at veritatis suscipit asperiores dolor eaque.
   #contact-us.section
     #contact-info.sub-section
       %ul
