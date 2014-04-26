@@ -1,5 +1,5 @@
 .hero {
-  $hero-background: desaturate(darken($base-accent-color, 20), 30);	
+  $hero-background: desaturate(darken($base-accent-color, 20), 30);
   $hero-color: white;
 
   background: url(https://raw.github.com/Magnus-G/Random/master/lake-transparent.png);
@@ -42,7 +42,7 @@
 
       p {
         margin: auto;
-        margin-bottom: 3em;	
+        margin-bottom: 3em;
         font-weight: 200;
 
         @include media($large-screen) {
