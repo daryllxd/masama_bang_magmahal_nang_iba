@@ -14,7 +14,7 @@ title: Welcome to Casa San Miguel
             .dot.dot3
             .dot.dot4
         .bx-content
-          %h2.welcome Welcome to CASA San Miguel
+          %h2.welcome= data.marketing.welcome
         %nav.bx-nav
           %a.bx-prev{:href => "#"}
           %a.bx-next{:href => "#"}
@@ -23,15 +23,12 @@ title: Welcome to Casa San Miguel
           %a{:href => "#", :style => "background-image:url(images/banner-thumbs-2.jpg)"}
           %a{:href => "#", :style => "background-image:url(images/banner-thumbs-1.jpg)"}
         .banner-splash
-          %img.splash-image{:alt => "image03", :src => "images/banner-3.jpg", :title => "Casa San Miguel is a something"}
-          %img.splash-image{:alt => "image02", :src => "images/banner-2.jpg", :title => "What else to say in here"}
-          %img.splash-image{:alt => "image01", :src => "images/banner-1.jpg", :title => "I don't what else can I say"}
+          - data.marketing.banner_images.each do |image|
+            %img.splash-image{:alt => "image03", :src => "images/#{image.src}", :title => image.title}
   %nav#navigation
     %section.branding.col-sm-2
       %img.logo{:alt => "", :src => "images/logo.png"}
     %ul#primary-nav.col-sm-10
-      %li
-        %a{:href => "#home"} Home
       %li
         %a{:href => "program.html"} Program
       %li
@@ -71,10 +68,12 @@ title: Welcome to Casa San Miguel
     #contact-info.sub-section
       %ul
         %li.contact
-          %i.icon-map-marker>
-          CASA San Miguel, Evangelista Street, Barangay San Miguel, San Antonio, Zambales, 2206 Philippines
-          %li.contact
-            %i.icon-phone +321 123 456 7
-          %li.contact
-            %i.icon-envelope mail@casasanmiguel.com
+          %i.icon-map-marker
+          = data.contact_details.address
+        %li.contact
+          %i.icon-phone 
+          = data.contact_details.phone_number
+        %li.contact
+          %i.icon-envelope 
+          = data.contact_details.email
     #map-canvas.sub-section

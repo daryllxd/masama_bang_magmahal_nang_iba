@@ -1,0 +1,12 @@
+welcome: "Welcome to Casa San Miguel"
+banner_images:
+  -
+    title: First copyright thing.
+    src: "banner-1.jpg"
+  -
+    title: The Museum of Community Heritage
+    src: "banner-2.jpg"
+  -
+    src: "banner-3.jpg"
+    title: Pundaquit Festival is the community arts program
+
