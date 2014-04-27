@@ -7,15 +7,15 @@ $(document).ready(function() {
     // loading status to show while preloading images
     $bxLoading      = $bxWrapper.find('div.bx-loading'),
     // container for the bg images and respective canvas
-    $bxContainer    = $bxWrapper.find('div.bx-container'),
+    $bxContainer    = $bxWrapper.find('div.banner-splash'),
     // the bg images we are gonna use
     $bxImgs       = $bxContainer.children('img'),
     // total number of bg images
     bxImgsCount     = $bxImgs.length,
     // the thumb elements
-    $thumbs       = $bxWrapper.find('div.bx-thumbs > a').hide(),
+    $thumbs       = $bxWrapper.find('div.banner-thumbnail-images > a').hide(),
     // the title for the current image
-    $title        = $bxWrapper.find('h2:first'),
+    $title        = $bxWrapper.find('.welcome'),
     // current image's index
     current       = 0,
     // variation to show the image:
