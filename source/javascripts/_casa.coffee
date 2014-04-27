@@ -1,11 +1,14 @@
 class Casa
   constructor: () ->
-  vars:
+  vars: {
+
+  }
   init: () ->
     this.ui.build()
     # this.listen()
   listen: () ->
     google.maps.event.addDomListener(window, 'load', this.map.init)
+
   ui:
     build: () ->
       this.sticky()
@@ -17,6 +20,7 @@ class Casa
           $('#navigation').find('.branding').css('opacity', 1)
         onStop: ()->
           $('#navigation').find('.branding').css('opacity', 0)
+
   map: {
     init: ()->
       styles = [
