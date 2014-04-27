@@ -1,7 +1,7 @@
-masama_bang_magmahal_nang_iba
+Masama Bang Magmahal ng Iba?
 =============================
 
-finished entry for caritakathon 2013
+finished entry for caritakathon 2013 (Casa San Miguel)
 
 Tech:
 
@@ -10,3 +10,8 @@ Tech:
 - Sass (Bootstrap + Bourbon + Neat)
 - Bower + Bootstrap + JQuery + QueryLoader + Gmaps
 
+To use:
+
+    $ bower install
+    $ bundle install
+    $ middleman
