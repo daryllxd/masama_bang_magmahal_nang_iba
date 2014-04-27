@@ -40,46 +40,37 @@ $(document).ready(function() {
       $bxImgs.each( function(i) {
 
         var $bximg  = $(this);
+$thumbs.fadeIn();
+centerImageCanvas();
+$bxLoading.delay(1000).fadeOut(100,function(){
+  initEvents();
+});
 
         // save the position of the image in data-pos load
         $('<img data-pos="' + $bximg.index() + '"/>').load(function() {
 
-          var $img  = $(this),
+          var $img  = $(this);
 
           // size of image to be fullscreen and centered
-          dim   = getImageDim( $img.attr('src') ),
+          dim   = getImageDim( $img.attr('src') );
           pos   = $img.data( 'pos' );
 
           // add the canvas to the DOM
-
           $.when( createCanvas( pos, dim ) ).done( function() {
-
             ++loaded;
-
             if( loaded === bxImgsCount ) {
-
               $thumbs.fadeIn();
-
               centerImageCanvas();
-
               $bxLoading.delay(1000).fadeOut(100,function(){
                 initEvents();
-
               });
-
             }
-
           });
-
         }).attr( 'src', $bximg.attr('src') );
-
       });
-
-
     },
     // creates the blurred canvas image
     createCanvas    = function( pos, dim ) {
-
       return $.Deferred( function(dfd) {
 
         // if canvas not supported return

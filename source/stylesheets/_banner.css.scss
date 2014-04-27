@@ -123,7 +123,7 @@
 }
 .bx-prev,
 .bx-next {
-  @include size(100%, 100%);
+  @include size(auto, 100%);
   color: #fff;
   font-family: Fontawesome;
   font-size: 6em;
@@ -137,14 +137,14 @@ a.bx-next {
   line-height: 1em;
 }
 .bx-prev {
-  left: 0;
+  left: 0.3em;
 }
 .bx-prev:before {
   content: '\f104';
   left: 0;
 }
 .bx-next {
-  right: 0;
+  right: 0.3em;
 }
 .bx-next:before {
   content: '\f105';
