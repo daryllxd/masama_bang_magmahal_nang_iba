@@ -1,6 +1,7 @@
 //= require jquery
 // require gmaps
 //= require queryloader2
+//= require modernizr/modernizr.js
 //= require sticky/jquery.sticky
 //= require _stackblur
 //= require _casa
