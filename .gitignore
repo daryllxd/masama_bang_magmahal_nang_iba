@@ -4,6 +4,8 @@
 # Ignore bower components
 /bower_components
 
+/tags
+
 # Ignore the build directory
 /build
 
