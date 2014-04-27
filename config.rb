@@ -1,3 +1,5 @@
+require 'ffaker'
+
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
@@ -18,5 +20,10 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
-sprockets.append_path File.join root.to_s, "bower_components"
+helpers do
+  def fake_lorem
+    Faker::Lorem::paragraph
+  end
+end
 
+sprockets.append_path File.join root.to_s, "bower_components"

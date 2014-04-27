@@ -41,12 +41,9 @@ title: Welcome to Casa San Miguel
     .sub-section
       .content
         %h1.title About CASA San Miguel
-        %p.lead
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, cum quae assumenda nisi illum facere laudantium aliquid optio delectus molestiae! Non, magni dolorem explicabo corporis minus provident doloribus voluptatem asperiores!
-        %p.col-sm-6
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, quaerat, voluptate, praesentium dignissimos consectetur reprehenderit fugiat optio sit quo tenetur placeat alias voluptas itaque asperiores facere voluptatem cumque pariatur temporibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, magni voluptatem laboriosam molestias doloremque autem dicta quisquam neque natus accusamus perferendis modi quo voluptatum aliquam unde odio quidem. Harum, molestias!
-        %p.col-sm-6
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, quas, at molestias earum et nostrum saepe nobis architecto similique nesciunt sunt magnam consectetur deleniti neque aspernatur voluptatem odit deserunt animi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, autem, necessitatibus, quod, nihil omnis iusto deleniti blanditiis ducimus voluptas quasi corrupti ab nesciunt magni officiis illum eum quae dolores dolorum.
+        %p.lead= fake_lorem
+        %p.col-sm-6= fake_lorem
+        %p.col-sm-6= fake_lorem
         .clearfix
   %section.spacer.children
   %section#news.section
@@ -62,7 +59,7 @@ title: Welcome to Casa San Miguel
             %img{:alt => "", :src => "uploads/images/2.jpg"}
           %section.news-content.col-md-8
             %h2.news-title Some news here
-            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, exercitationem fugiat architecto modi quis voluptate ea! Accusantium, minus, facere, eveniet eligendi autem ducimus dolorem at veritatis suscipit asperiores dolor eaque.
+            %p= fake_lorem
   #contact-us.section
     #contact-info.sub-section
       %ul
@@ -70,10 +67,9 @@ title: Welcome to Casa San Miguel
           %i.icon-map-marker>
           CASA San Miguel, Evangelista Street, Barangay San Miguel, San Antonio, Zambales, 2206 Philippines
           %li.contact
-            %i.icon-phone>
+            %i.icon-phone
             +321 123 456 7
             %li.contact
-              %i.icon-envelope>
+              %i.icon-envelope
               mail@casasanmiguel.com
     #map-canvas.sub-section
-      / end wrapper
