@@ -150,22 +150,16 @@ a.bx-next {
   content: '\f105';
   left: 0;
 }
-.bx-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.banner-splash {
+  @include position(absolute, 0px 0px 0 0);
+  @include size(100%, 100%);
   z-index: 1;
   overflow: hidden;
 }
-.bx-container img {
-  position: absolute;
-  top: 0;
-  left: 0;
+.banner-splash .splash-image {
+  @include position(absolute, 0px 0px 0 0);
   width: 100%;
   z-index: 101;
-  display: none;
 }
 .bx-canvas {
   position: absolute;

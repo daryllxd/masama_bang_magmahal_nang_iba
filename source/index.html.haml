@@ -8,20 +8,20 @@ title: Welcome to Casa San Miguel
     #main-banner{"data-speed" => "2", "data-type" => "background"}
       .bx-content
         %h2.welcome Welcome to CASA San Miguel
-      %nav.bx-nav
-        %a.bx-prev{:href => "#"}
-        %a.bx-next{:href => "#"}
+      -# %nav.bx-nav
+      -#   %a.bx-prev{:href => "#"}
+      -#   %a.bx-next{:href => "#"}
       .banner-thumbnail-images
         %a{:href => "#", :style => "background-image:url(images/banner-thumbs-3.jpg)"}
         %a{:href => "#", :style => "background-image:url(images/banner-thumbs-2.jpg)"}
         %a{:href => "#", :style => "background-image:url(images/banner-thumbs-1.jpg)"}
-      .bx-container
-        %img{:alt => "image03", :src => "images/banner-3.jpg", :title => "Something to say in here"}
-        %img{:alt => "image02", :src => "images/banner-2.jpg", :title => "What else to say in here"}
-        %img{:alt => "image01", :src => "images/banner-1.jpg", :title => "I don't what else can I say"}
+      .banner-splash
+        %img.splash-image{:alt => "image03", :src => "images/banner-3.jpg", :title => "Something to say in here"}
+        %img.splash-image{:alt => "image02", :src => "images/banner-2.jpg", :title => "What else to say in here"}
+        %img.splash-image{:alt => "image01", :src => "images/banner-1.jpg", :title => "I don't what else can I say"}
   %nav#navigation.container
     %section.branding.col-sm-2
-      %img.logo{:alt => "", :src => "public/img/logo.png"}
+      %img.logo{:alt => "", :src => "images/logo.png"}
     %ul#primary-nav.col-sm-10
       %li
         %a{:href => "#home"} Home
